@@ -49,7 +49,18 @@ Expects a *well formed query* to be given as input
 *   In absence of parenthesis, the precedence order followed by operators is ~ > & > |
 * Supports wildcard entries/terms of following formats: A\* , \*A , A\*B , A\*B\*C 
 
+The below code snippet can be run obtain the docs satisfying the query </br>
+```
+query = input("Enter query: ")
+for term in query.split(" "):
+  if('*' in term):
+    query=query.replace(term,match_terms(term))
+q_tokens = query_preprocess(query)
+ids=evaluate_and_match(q_tokens)
+# Returns list of names of documents satisfying the query
+get_docs(ids)
 
+```
 
 
 
