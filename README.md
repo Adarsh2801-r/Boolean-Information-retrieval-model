@@ -37,7 +37,7 @@ print(q_tokens)
 
 ```
 
-### Querying
+### QUERYING
 
 Expects a *well formed query* to be given as input
 
