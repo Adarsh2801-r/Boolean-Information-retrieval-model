@@ -61,6 +61,15 @@ ids=evaluate_and_match(q_tokens)
 get_docs(ids)
 
 ```
+</br>
+Sample output:
+Enter query: brut* & br*oth
+</br>
+matched_docs =>
+['julius-caesar_TXT_FolgerShakespeare.txt',
+ 'the-merchant-of-venice_TXT_FolgerShakespeare.txt',
+ 'henry-v_TXT_FolgerShakespeare.txt']
+
 
 
 
