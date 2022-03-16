@@ -37,6 +37,20 @@ print(q_tokens)
 
 ```
 
+### Querying
+
+Expects a *well formed query* to be given as input
+
+**Well-formed query:** 
+
+*   Every word/symbol must be space seperated
+*   The following symbols represent boolean operators : **AND = & , OR = | , NOT = ~**
+*   If parenthesis are used, it must be ensured that they are properly balanced
+*   In absence of parenthesis, the precedence order followed by operators is ~ > & > |
+* Supports wildcard entries/terms of following formats: A\* , \*A , A\*B , A\*B\*C 
+
+
+
 
 
     
