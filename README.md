@@ -22,7 +22,21 @@ preprocess(corpus)
 vocab = set(posting_list.keys())
 ```
 **Query preprocessing :** </br>
-1) 
+1) Tokenizes the query terms </br>
+2) Replaces wildcard terms with equivalent boolean expression of terms</br>
+3) Spelling correction of terms using edit-distance method </br>
+
+To test the query-preprocessing and obtain list of tokens, run the following code snippet in the .ipynb file </br>
+```
+query = input("Enter query: ")
+for term in query.split(" "):
+  if('*' in term):
+    query=query.replace(term,match_terms(term))
+q_tokens = query_preprocess(query)
+print(q_tokens)
+
+```
+
 
 
     
