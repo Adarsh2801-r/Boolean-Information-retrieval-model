@@ -62,10 +62,11 @@ get_docs(ids)
 
 ```
 </br>
-Sample output:
-Enter query: brut* & br*oth
-</br>
-matched_docs =>
+Sample output: </br>
+
+Enter query: brut* & br\*oth </br>
+
+matched_docs => </br>
 ['julius-caesar_TXT_FolgerShakespeare.txt',
  'the-merchant-of-venice_TXT_FolgerShakespeare.txt',
  'henry-v_TXT_FolgerShakespeare.txt']
