@@ -8,6 +8,13 @@
 
 ## Procedure 
 
+If running on Google Colab, upload the zip folder containing documents to session and unzip the contents to store the documents in a folder - corpus.
+
+```
+# unzipping the corpus zip file
+!unzip "/content/shakespeares-works_TXT_FolgerShakespeare (1).zip" -d "/content/corpus"
+```
+
 ### PRE-PROCESSING 
 **Document preprocessing :** 
 1) Involves tokenizing, removing stopwords, case folding, stemming (PorterStemmer used) and building the inverted index structure. 
